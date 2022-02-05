@@ -156,7 +156,7 @@ def __delitem__(self, index: int) -> Any:
 
 
 def insert(self, index: int, value: Any) -> None:
-    """Метод устанавливает узел по указанному индексу """
+    """Метод устанавливает узел по указанному индексу. """
     inserted_node = DoubleLinkedNode(value)
     next_node = self.step_by_step_on_nodes(index + 1)
     self.step_by_step_on_nodes(index).next = inserted_node
